@@ -3283,3 +3283,30 @@ form .inputs-description {
 /* ------------------------------------------------*/
 /* Gallery End */
 /* ------------------------------------------------*/
+
+/* New styles for #notify */
+#notify .popup-title__title,
+#notify .popup-title__text,
+#notify .form.contact-form.form-dark input,
+#notify .form.contact-form.form-dark textarea,
+#notify .form.contact-form.form-dark .inputs-description,
+#notify .form.contact-form.form-dark button,
+#notify .reply-group__title,
+#notify .reply-group__text {
+  color: #ffffff; /* Set text color to white */
+}
+
+#notify .form.contact-form.form-dark input::placeholder,
+#notify .form.contact-form.form-dark textarea::placeholder {
+  color: #ffffff; /* Set placeholder text color to white */
+}
+
+#notify .form.contact-form.form-dark input,
+#notify .form.contact-form.form-dark textarea {
+  border-bottom: 1px solid #ffffff; /* Set input and textarea border color to white */
+}
+
+#notify .form.contact-form.form-dark input:focus,
+#notify .form.contact-form.form-dark textarea:focus {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7); /* Set input and textarea border color to white on focus */
+}
