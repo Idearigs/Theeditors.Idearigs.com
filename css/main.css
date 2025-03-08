@@ -1482,6 +1482,7 @@ form .inputs-description {
 /* ------------------------------------------------*/
 /* Header Start */
 /* ------------------------------------------------*/
+/* Base styles for the header */
 .header {
   position: fixed;
   top: 0;
@@ -1560,6 +1561,49 @@ form .inputs-description {
   -o-transition: padding 0.5s ease-in-out;
   -moz-transition: padding 0.5s ease-in-out;
   transition: padding 0.5s ease-in-out;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 767px) {
+  .header {
+    height: 70px;
+    padding: 0 3vw;
+  }
+
+  .logo {
+    left: 3vw;
+  }
+
+  .logo img {
+    width: 100px; /* Increase logo size on mobile */
+  }
+
+  .menu-button {
+    right: 2vw;
+  }
+
+  .menu-caption {
+    display: none; /* Remove menu caption in mobile mode */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header {
+    height: 60px;
+    padding: 0 2vw;
+  }
+
+  .logo {
+    left: 1vw;
+  }
+
+  .logo img {
+    width: 300px; /* Further increase logo size on smaller mobile screens */
+  }
+
+  .menu-button {
+    right: 1vw;
+  }
 }
 
 /* ------------------------------------------------*/
@@ -3103,26 +3147,71 @@ form .inputs-description {
 /* ------------------------------------------------*/
 .footer {
   position: relative;
-  padding: 100px 0;
+  padding: 50px 0; /* Adjusted padding for smaller screens */
 }
 
 .footer__content {
   position: relative;
-  padding: 0 5vw;
+  padding: 0 3vw; /* Adjusted padding for smaller screens */
 }
 
 .footer__logo {
   text-align: center;
-  margin-bottom: 3.6rem;
+  margin-bottom: 2rem;
 }
 .footer__logo img {
-  width: auto;
+  width: 100px; /* Adjusted width for smaller screens */
   margin: 0 auto;
 }
 
 .footer__slogan,
 .footer__socials {
   text-align: center;
+}
+
+/* Media query for tablets */
+@media only screen and (min-width: 768px) {
+  .footer {
+    padding: 75px 0; /* Adjusted padding for tablets */
+  }
+
+  .footer__content {
+    padding: 0 5vw; /* Adjusted padding for tablets */
+  }
+
+  .footer__logo img {
+    width: 150px; /* Adjusted width for tablets */
+  }
+}
+
+/* Media query for desktops */
+@media only screen and (min-width: 992px) {
+  .footer {
+    padding: 100px 0; /* Adjusted padding for desktops */
+  }
+
+  .footer__content {
+    padding: 0 5vw; /* Adjusted padding for desktops */
+  }
+
+  .footer__logo img {
+    width: 200px; /* Adjusted width for desktops */
+  }
+}
+
+/* Media query for large desktops */
+@media only screen and (min-width: 1200px) {
+  .footer {
+    padding: 120px 0; /* Adjusted padding for large desktops */
+  }
+
+  .footer__content {
+    padding: 0 5vw; /* Adjusted padding for large desktops */
+  }
+
+  .footer__logo img {
+    width: 250px; /* Adjusted width for large desktops */
+  }
 }
 
 /* ------------------------------------------------*/
